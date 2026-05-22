@@ -1,14 +1,14 @@
 {
   "site": {
-    "name": "Shobhit",
+    "name": "Shobhit Batra",
     "brandName": "BN ",
     "brandSuffix": " LAW",
-    "lawyerName": "Shobhit Kumar",
+    "lawyerName": "Shobhit Batra",
     "phone": "+91 9756123555",
-    "email": "james@mitchelllaw.com",
-    "address": "100 Justice Avenue, Suite 500\nNew York, NY 10001",
+    "email": "shobhit.bara@gmail.com",
+    "address": "Kashipur, Uttrakhand",
     "hours": "Monday – Friday: 9:00 AM – 6:00 PM",
-    "barInfo": "James A. Mitchell | Attorney at Law | State Bar No. 123456"
+    "barInfo": "Shobhit Batra| Attorney at High Court | State Bar No. 123456"
   },
   "navbar": {
     "links": [
@@ -22,38 +22,37 @@
   },
   "hero": {
     "eyebrow": "Attorney & Legal Counsel",
-    "heading1": "James A.",
-    "heading2": "Mitchell",
-    "subtext": "Trusted Legal Expertise with Over <strong>10 Years</strong> of Experience. Committed to defending your rights and achieving the justice you deserve.",
+    "heading1": "Shobhit",
+    "heading2": "Batra",
+    "subtext": "Trusted Legal Expertise with Over <strong>7 Years</strong> of Experience. Committed to defending your rights and achieving the justice you deserve.",
     "primaryCta": "Ask a Query",
     "secondaryCta": "Learn More",
     "badge": {
       "title": "Bar Certified",
       "subtitle": "State Bar Association"
     },
-    "photoCaption": "James A. Mitchell",
+    "photoCaption": "Shobhit Batra",
     "photoCaptionRole": "Attorney at Law",
     "stats": [
-      { "value": "10+", "label": "Years Experience" },
-      { "value": "500+", "label": "Cases Won" },
-      { "value": "98%", "label": "Success Rate" }
+      { "value": "7+", "label": "Years Experience" },
+      { "value": "50+", "label": "Cases Won" },
+      { "value": "95%", "label": "Success Rate" }
     ]
   },
   "stats": [
-    { "value": "10+", "label": "Years of Experience" },
-    { "value": "500+", "label": "Cases Successfully Won" },
-    { "value": "1,000+", "label": "Clients Served" },
-    { "value": "98%", "label": "Client Satisfaction Rate" }
+    { "value": "7+", "label": "Years of Experience" },
+    { "value": "50+", "label": "Cases Successfully Won" },
+    { "value": "100+", "label": "Clients Served" },
+    { "value": "95%", "label": "Client Satisfaction Rate" }
   ],
   "about": {
     "eyebrow": "About",
     "heading": "A Decade of Dedicated\nLegal Representation",
     "bio": [
-      "James A. Mitchell is a seasoned attorney with over a decade of experience representing clients across a wide spectrum of legal matters. A graduate of Columbia Law School, James has built a reputation for strategic thinking, relentless advocacy, and personalized client service.",
+      "Shobhit Batra is a seasoned attorney with over a decade of experience representing clients across a wide spectrum of legal matters. A graduate of Columbia Law School, James has built a reputation for strategic thinking, relentless advocacy, and personalized client service.",
       "His practice is rooted in the belief that every client deserves exceptional legal representation regardless of the complexity of their case. From high-stakes corporate negotiations to compassionate family law guidance, James brings the same level of dedication and expertise to every matter."
     ],
     "credentials": [
-      "Columbia Law School, J.D.",
       "State Bar Certified",
       "ABA Member",
       "Top 40 Under 40"
