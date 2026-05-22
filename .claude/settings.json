@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"exit: $?\")",
+      "Bash(fuser -k 3000/tcp)",
+      "Bash(fuser -k 8000/tcp)"
+    ]
+  }
+}

@@ -2,3 +2,12 @@ node_modules
 dist/
 .tmp
 app.yaml
+
+# Environment
+.env
+
+# SQLite database file (auto-created at runtime)
+*.db
+*.db-shm
+*.db-wal
+

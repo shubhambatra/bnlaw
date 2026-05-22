@@ -1,0 +1,353 @@
+{
+  "site": {
+    "name": "Shobhit",
+    "brandName": "BN ",
+    "brandSuffix": " LAW",
+    "lawyerName": "Shobhit Kumar",
+    "phone": "+91 9756123555",
+    "email": "james@mitchelllaw.com",
+    "address": "100 Justice Avenue, Suite 500\nNew York, NY 10001",
+    "hours": "Monday – Friday: 9:00 AM – 6:00 PM",
+    "barInfo": "James A. Mitchell | Attorney at Law | State Bar No. 123456"
+  },
+  "navbar": {
+    "links": [
+      { "label": "Home", "hash": "#home" },
+      { "label": "About", "hash": "#about" },
+      { "label": "Expertise", "hash": "#expertise" },
+      { "label": "Testimonials", "hash": "#testimonials" },
+      { "label": "Contact", "hash": "#contact" }
+    ],
+    "cta": "Ask a Query"
+  },
+  "hero": {
+    "eyebrow": "Attorney & Legal Counsel",
+    "heading1": "James A.",
+    "heading2": "Mitchell",
+    "subtext": "Trusted Legal Expertise with Over <strong>10 Years</strong> of Experience. Committed to defending your rights and achieving the justice you deserve.",
+    "primaryCta": "Ask a Query",
+    "secondaryCta": "Learn More",
+    "badge": {
+      "title": "Bar Certified",
+      "subtitle": "State Bar Association"
+    },
+    "photoCaption": "James A. Mitchell",
+    "photoCaptionRole": "Attorney at Law",
+    "stats": [
+      { "value": "10+", "label": "Years Experience" },
+      { "value": "500+", "label": "Cases Won" },
+      { "value": "98%", "label": "Success Rate" }
+    ]
+  },
+  "stats": [
+    { "value": "10+", "label": "Years of Experience" },
+    { "value": "500+", "label": "Cases Successfully Won" },
+    { "value": "1,000+", "label": "Clients Served" },
+    { "value": "98%", "label": "Client Satisfaction Rate" }
+  ],
+  "about": {
+    "eyebrow": "About",
+    "heading": "A Decade of Dedicated\nLegal Representation",
+    "bio": [
+      "James A. Mitchell is a seasoned attorney with over a decade of experience representing clients across a wide spectrum of legal matters. A graduate of Columbia Law School, James has built a reputation for strategic thinking, relentless advocacy, and personalized client service.",
+      "His practice is rooted in the belief that every client deserves exceptional legal representation regardless of the complexity of their case. From high-stakes corporate negotiations to compassionate family law guidance, James brings the same level of dedication and expertise to every matter."
+    ],
+    "credentials": [
+      "Columbia Law School, J.D.",
+      "State Bar Certified",
+      "ABA Member",
+      "Top 40 Under 40"
+    ],
+    "cta": "Get in Touch",
+    "values": {
+      "eyebrow": "Core Values",
+      "items": [
+        {
+          "title": "Client-First Approach",
+          "desc": "Every decision is made with your best interests at the forefront. We listen, advise, and act — always for you."
+        },
+        {
+          "title": "Integrity & Transparency",
+          "desc": "Honest counsel, clear communication, and no hidden surprises. You deserve to know exactly where you stand."
+        },
+        {
+          "title": "Results-Driven Advocacy",
+          "desc": "We fight for outcomes that matter — in the courtroom, in negotiations, and at every step of the legal process."
+        },
+        {
+          "title": "Confidentiality & Trust",
+          "desc": "Your information is protected absolutely. Building trust is the foundation of every client relationship."
+        }
+      ]
+    }
+  },
+  "expertise": {
+    "eyebrow": "Practice Areas",
+    "heading": "Areas of Expertise",
+    "description": "Comprehensive legal services across multiple disciplines, backed by a decade of hands-on courtroom and transactional experience.",
+    "areas": [
+      {
+        "key": "corporate",
+        "title": "Corporate Law",
+        "desc": "Business formations, mergers, acquisitions, commercial contracts, and corporate governance for companies of all sizes."
+      },
+      {
+        "key": "family",
+        "title": "Family Law",
+        "desc": "Divorce, child custody, adoption, spousal support, and domestic relations handled with sensitivity and professionalism."
+      },
+      {
+        "key": "criminal",
+        "title": "Criminal Defense",
+        "desc": "Aggressive defense against criminal charges — from misdemeanors to felonies — protecting your rights at every stage."
+      },
+      {
+        "key": "civil",
+        "title": "Civil Litigation",
+        "desc": "Tenacious representation in civil disputes including personal injury, contract breaches, and commercial litigation."
+      },
+      {
+        "key": "realestate",
+        "title": "Real Estate Law",
+        "desc": "Property transactions, lease agreements, zoning disputes, and real estate litigation for buyers, sellers, and developers."
+      },
+      {
+        "key": "estate",
+        "title": "Estate Planning",
+        "desc": "Wills, trusts, probate, and comprehensive estate planning to protect your legacy and provide for your loved ones."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What Clients Say",
+    "description": "Real stories from real clients whose lives and businesses were protected through dedicated legal representation.",
+    "items": [
+      {
+        "name": "Sarah T.",
+        "role": "Corporate Client",
+        "text": "James handled our company's merger with exceptional skill. His strategic approach and attention to detail saved us from several potential pitfalls. I wouldn't trust anyone else with our legal matters.",
+        "rating": 5
+      },
+      {
+        "name": "Michael R.",
+        "role": "Criminal Defense Client",
+        "text": "When I needed someone to fight for me, James was there. His deep knowledge of criminal law and his unwavering commitment to my case made all the difference. The charges were dropped.",
+        "rating": 5
+      },
+      {
+        "name": "Lisa M.",
+        "role": "Family Law Client",
+        "text": "Going through a divorce is incredibly difficult. James guided me with compassion and legal expertise throughout the process. He secured a fair outcome for me and my children. Forever grateful.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's Discuss\nYour Legal Needs",
+    "description": "Every legal matter is unique. Reach out for a confidential consultation and receive honest guidance on your options — with no obligation.",
+    "infoLabels": {
+      "phone": "Phone",
+      "email": "Email",
+      "office": "Office",
+      "hours": "Hours"
+    },
+    "form": {
+      "heading": "Send a Query",
+      "fields": {
+        "name": { "label": "Full Name *", "placeholder": "John Doe" },
+        "email": { "label": "Email *", "placeholder": "john@example.com" },
+        "phone": { "label": "Phone Number", "placeholder": "+1 (555) 000-0000" },
+        "subject": { "label": "Practice Area *", "placeholder": "Select a practice area" },
+        "message": { "label": "Your Query *", "placeholder": "Briefly describe your legal matter..." }
+      },
+      "practiceAreas": [
+        "Corporate Law",
+        "Family Law",
+        "Criminal Defense",
+        "Civil Litigation",
+        "Real Estate Law",
+        "Estate Planning",
+        "Other"
+      ],
+      "submit": "Submit Query",
+      "confidentiality": "All communications are strictly confidential.",
+      "success": {
+        "heading": "Query Received",
+        "message": "We'll be in touch within 24 business hours.",
+        "cta": "Submit another query"
+      }
+    }
+  },
+  "footer": {
+    "brand": {
+      "description": "Providing trusted legal counsel for over a decade. Your rights. Your future. Our commitment.",
+      "disclaimerLabel": "Disclaimer:",
+      "disclaimer": "The information on this website is for general informational purposes only and does not constitute legal advice. Consult an attorney for advice regarding your specific situation."
+    },
+    "quickLinks": {
+      "heading": "Quick Links",
+      "items": ["Home", "About", "Expertise", "Testimonials", "Contact"]
+    },
+    "practiceAreas": {
+      "heading": "Practice Areas",
+      "items": [
+        "Corporate Law",
+        "Family Law",
+        "Criminal Defense",
+        "Civil Litigation",
+        "Real Estate Law",
+        "Estate Planning"
+      ]
+    },
+    "copyright": "Mitchell Law. All rights reserved."
+  },
+  "chatbot": {
+    "header": {
+      "title": "Legal Assistant",
+      "subtitle": "Mitchell Law",
+      "newChat": "New chat"
+    },
+    "greeting": "Hi! I'm here to help you. Please answer a few questions so we can better understand your case.",
+    "completion": [
+      "Thanks for sharing the details.",
+      "We will analyse your case and get back to you shortly."
+    ],
+    "done": "All done — we'll be in touch shortly.",
+    "submitting": "Submitting…",
+    "error": "Something went wrong. Please try again.",
+    "networkError": "Could not start the chat. Please try again later.",
+    "inputPlaceholder": "Type your answer…",
+    "tryAgain": "Try again",
+    "sendLabel": "Send"
+  },
+  "queryPage": {
+    "eyebrow": "Mitchell Law",
+    "heading": "Submit a Legal Query",
+    "description": "Provide your case details below. All information is handled with the utmost confidentiality. Fields marked * are required.",
+    "back": "Back to Home",
+    "caseTypes": {
+      "placeholder": "Select case type…",
+      "fir": "FIR Related",
+      "court": "Court Case",
+      "general": "General Legal Query"
+    },
+    "sections": {
+      "personal": {
+        "title": "Personal Details",
+        "description": "Your contact information so we can respond to your query.",
+        "fields": {
+          "name": { "label": "Full Name", "placeholder": "e.g. Rahul Sharma" },
+          "email": { "label": "Email Address", "placeholder": "you@example.com" },
+          "phone": { "label": "Phone Number", "placeholder": "+91 98765 43210" }
+        }
+      },
+      "case": {
+        "title": "Case Information",
+        "description": "Select the type of matter you need help with.",
+        "fields": {
+          "caseType": "Case Type",
+          "fir": {
+            "heading": "FIR Details",
+            "firNumber": { "label": "FIR Number", "placeholder": "e.g. 123/2024" },
+            "firCity": { "label": "FIR Place (Police Station City)", "placeholder": "e.g. Mumbai" }
+          },
+          "court": {
+            "heading": "Court Details",
+            "courtCity": { "label": "Court Name / City", "placeholder": "e.g. Delhi" },
+            "caseNumber": { "label": "Case Number", "placeholder": "e.g. CS/456/2024" }
+          }
+        }
+      },
+      "queryDesc": {
+        "title": "Query Description",
+        "description": "Briefly describe your legal matter. The more context you provide, the better we can advise you.",
+        "fields": {
+          "description": {
+            "label": "Short Description",
+            "placeholder": "Describe your legal matter in brief — what happened, when it happened, and what outcome you're seeking…"
+          }
+        },
+        "minChars": "20 min"
+      }
+    },
+    "submit": "Submit Query",
+    "submitting": "Submitting…",
+    "confidentiality": "All information is encrypted and kept strictly confidential.",
+    "validationSummary": "Please correct the highlighted fields before submitting.",
+    "networkError": "Network error — please check your connection and try again.",
+    "errors": {
+      "name": "Full name is required (minimum 2 characters).",
+      "email_required": "Email address is required.",
+      "email_invalid": "Please enter a valid email address.",
+      "phone_invalid": "Please enter a valid phone number.",
+      "caseType": "Please select a case type.",
+      "firNumber_required": "FIR number is required.",
+      "firNumber_invalid": "FIR number may only contain letters, digits, / and -.",
+      "firCity": "FIR place (city) is required.",
+      "courtCity": "Court city is required.",
+      "caseNumber": "Case number is required.",
+      "description_required": "Please describe your matter.",
+      "description_short": "Description must be at least 20 characters."
+    },
+    "success": {
+      "heading": "Query Submitted",
+      "thankyou": "Thank you,",
+      "message": "We have received your query and will respond to",
+      "within": "within",
+      "timeframe": "24 business hours",
+      "confidentiality": "All communications are strictly confidential.",
+      "newQuery": "New Query",
+      "backHome": "Back to Home"
+    }
+  },
+  "admin": {
+    "title": "Chatbot Questions",
+    "subtitle": "Manage the questions shown to users in the chatbot.",
+    "addButton": "+ Add Question",
+    "empty": "No questions yet. Add one above.",
+    "table": {
+      "order": "#",
+      "question": "Question",
+      "type": "Type",
+      "active": "Active"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Del",
+      "moveUp": "Move up",
+      "moveDown": "Move down",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "dismiss": "Dismiss",
+      "delete_confirm": "Delete this question?"
+    },
+    "form": {
+      "addTitle": "Add Question",
+      "editTitle": "Edit Question",
+      "fields": {
+        "questionText": "Question Text *",
+        "type": "Type",
+        "order": "Order",
+        "options": "Options (comma-separated)",
+        "optionsPlaceholder": "Option A, Option B, Option C",
+        "required": "Required",
+        "active": "Active"
+      },
+      "save": "Save",
+      "saving": "Saving…",
+      "cancel": "Cancel"
+    },
+    "login": {
+      "title": "Admin Access",
+      "subtitle": "Enter your password to continue.",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter admin password",
+      "submit": "Sign In",
+      "submitting": "Signing in…",
+      "error": "Incorrect password. Please try again.",
+      "networkError": "Could not connect. Please try again."
+    }
+  }
+}
