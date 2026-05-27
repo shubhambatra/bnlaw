@@ -2,6 +2,7 @@ import { useState, type FormEvent, type ChangeEvent, type ReactNode } from 'reac
 import { Link } from 'react-router-dom';
 import CityAutocomplete from '../components/CityAutocomplete';
 import content from '../content.json';
+import { apiUrl } from '../lib/api';
 
 const t = content.queryPage;
 
@@ -191,7 +192,7 @@ export default function QueryPage() {
 
     setLoading(true);
     try {
-      const res = await fetch('/api/queries', {
+      const res = await fetch(apiUrl('/api/queries'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
