@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import content from '../content.json';
+import { apiUrl } from '../lib/api';
 
 const t = content.chatbot;
 
@@ -61,7 +62,7 @@ export default function Chatbot() {
   const startSession = useCallback(async () => {
     setPhase('loading');
     try {
-      const res = await fetch('/api/chat/sessions', { method: 'POST' });
+      const res = await fetch(apiUrl('/api/chat/sessions'), { method: 'POST' });
       const json = await res.json();
       if (!json.success) throw new Error();
       const { sessionId: sid, questions: qs } = json.data as {
@@ -89,7 +90,7 @@ export default function Chatbot() {
     async (sid: string) => {
       setPhase('loading');
       try {
-        const res = await fetch(`/api/chat/sessions/${sid}`);
+        const res = await fetch(apiUrl(`/api/chat/sessions/${sid}`));
         if (!res.ok) {
           localStorage.removeItem(SESSION_KEY);
           await startSession();
@@ -167,7 +168,7 @@ export default function Chatbot() {
     setMessages((prev) => [...prev, { id: uid(), role: 'user', text }]);
 
     try {
-      const res = await fetch(`/api/chat/sessions/${sessionId}/respond`, {
+      const res = await fetch(apiUrl(`/api/chat/sessions/${sessionId}/respond`), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question_id: currentQ.id, response_text: text }),
@@ -183,7 +184,7 @@ export default function Chatbot() {
       if (allDone) {
         setCurrentQ(null);
         setPhase('completing');
-        await fetch(`/api/chat/sessions/${sessionId}/complete`, { method: 'POST' });
+        await fetch(apiUrl(`/api/chat/sessions/${sessionId}/complete`), { method: 'POST' });
         await addBotMessage(t.completion[0]);
         await addBotMessage(t.completion[1]);
         setPhase('done');

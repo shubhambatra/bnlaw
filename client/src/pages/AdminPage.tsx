@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import content from '../content.json';
+import { apiUrl } from '../lib/api';
 
 const t = content.admin;
 const TOKEN_KEY = 'bnlaw_admin_token';
@@ -36,7 +37,7 @@ function LoginForm({ onSuccess }: { onSuccess: () => void }) {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch('/api/admin/login', {
+      const res = await fetch(apiUrl('/api/admin/login'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password }),
@@ -114,7 +115,7 @@ export default function AdminPage() {
   const load = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/admin/questions', { headers: authHeaders() });
+      const res = await fetch(apiUrl('/api/admin/questions'), { headers: authHeaders() });
       if (res.status === 401) { clearToken(); setAuthed(false); return; }
       const json = await res.json();
       setQuestions(json.data ?? []);
@@ -130,7 +131,7 @@ export default function AdminPage() {
   if (!authed) return <LoginForm onSuccess={() => setAuthed(true)} />;
 
   const logout = async () => {
-    await fetch('/api/admin/logout', { method: 'POST', headers: authHeaders() }).catch(() => {});
+    await fetch(apiUrl('/api/admin/logout'), { method: 'POST', headers: authHeaders() }).catch(() => {});
     clearToken();
     setAuthed(false);
   };
@@ -167,7 +168,7 @@ export default function AdminPage() {
       active: form.active,
     };
     try {
-      const url = editId ? `/api/admin/questions/${editId}` : '/api/admin/questions';
+      const url = editId ? apiUrl(`/api/admin/questions/${editId}`) : apiUrl('/api/admin/questions');
       const res = await fetch(url, { method: editId ? 'PATCH' : 'POST', headers: authHeaders(), body: JSON.stringify(body) });
       if (res.status === 401) { clearToken(); setAuthed(false); return; }
       const json = await res.json();
@@ -183,20 +184,20 @@ export default function AdminPage() {
 
   const handleDelete = async (id: number) => {
     if (!confirm(t.actions.delete_confirm)) return;
-    await fetch(`/api/admin/questions/${id}`, { method: 'DELETE', headers: authHeaders() });
+    await fetch(apiUrl(`/api/admin/questions/${id}`), { method: 'DELETE', headers: authHeaders() });
     await load();
   };
 
   const toggleActive = async (q: Question) => {
-    await fetch(`/api/admin/questions/${q.id}`, { method: 'PATCH', headers: authHeaders(), body: JSON.stringify({ active: q.active === 0 }) });
+    await fetch(apiUrl(`/api/admin/questions/${q.id}`), { method: 'PATCH', headers: authHeaders(), body: JSON.stringify({ active: q.active === 0 }) });
     await load();
   };
 
   const move = async (q: Question, dir: -1 | 1) => {
     const newOrder = q.order_index + dir;
     const swap = questions.find((x) => x.order_index === newOrder);
-    await fetch(`/api/admin/questions/${q.id}`, { method: 'PATCH', headers: authHeaders(), body: JSON.stringify({ order_index: newOrder }) });
-    if (swap) await fetch(`/api/admin/questions/${swap.id}`, { method: 'PATCH', headers: authHeaders(), body: JSON.stringify({ order_index: q.order_index }) });
+    await fetch(apiUrl(`/api/admin/questions/${q.id}`), { method: 'PATCH', headers: authHeaders(), body: JSON.stringify({ order_index: newOrder }) });
+    if (swap) await fetch(apiUrl(`/api/admin/questions/${swap.id}`), { method: 'PATCH', headers: authHeaders(), body: JSON.stringify({ order_index: q.order_index }) });
     await load();
   };
 

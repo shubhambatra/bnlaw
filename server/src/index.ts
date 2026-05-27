@@ -7,7 +7,7 @@ import queriesRouter from './routes/queries';
 import chatRouter from './routes/chat';
 import adminRouter from './routes/admin';
 
-dotenv.config({ path: '../.env' });
+dotenv.config();
 
 const app  = express();
 const PORT = process.env.PORT ?? 8000;
