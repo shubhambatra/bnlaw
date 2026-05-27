@@ -1,13 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
 import { initSchema } from './db/schema';
 import { initChatSchema } from './db/chatSchema';
 import queriesRouter from './routes/queries';
 import chatRouter from './routes/chat';
 import adminRouter from './routes/admin';
 
-dotenv.config();
+// __dirname is server/src (ts-node) or server/dist (compiled) — ../../ reaches repo root .env
+dotenv.config({ path: path.join(__dirname, '../../.env') });
 
 const app  = express();
 const PORT = process.env.PORT ?? 8000;
