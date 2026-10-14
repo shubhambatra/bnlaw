@@ -1,10 +1,14 @@
-# bnlaw
+# BN Law
 
-A full-stack monolithic repository built with React, Node.js, and TypeScript. Runs natively or via Docker (recommended for Windows).
+A lawyer's personal/practice website with a client intake form — prospective clients can submit their case details online before connecting with the lawyer, instead of that first contact happening over phone/email.
+
+**Live:** [bnlaw.vercel.app](https://bnlaw.vercel.app)
+
+Built solo, end-to-end — frontend, backend, and deployment.
 
 ## Overview
 
-This repo contains both the frontend and backend in a single codebase, sharing types and utilities across the stack. The frontend is a React SPA; the backend is a Node.js/Express API server. TypeScript is used end-to-end.
+Full-stack monolithic repository built with React, Node.js, and TypeScript. Runs natively or via Docker (recommended for Windows). The frontend is a React SPA; the backend is a Node.js/Express API server handling the intake form submissions. TypeScript is used end-to-end, with shared types between client and server.
 
 ## Project Structure
 
@@ -159,13 +163,6 @@ npm start
 | `CLIENT_URL` | Allowed CORS origin for the frontend |
 | `DATABASE_URL` | Database connection string |
 
-## Contributing
-
-1. Branch from `master` — use the format `feat/<short-description>` or `fix/<short-description>`.
-2. Run `npm run typecheck` and `npm run lint` before opening a PR.
-3. Keep client and server changes in separate commits where possible.
-
 ## License
 
 MIT
-# bnlaw
